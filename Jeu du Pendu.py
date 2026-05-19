@@ -79,7 +79,8 @@ def jouer_au_pendu():
 
     #Choisir au hasard le mot à deviner
     mot_a_deviner = choisir_mot_hasard(mots)
-    print(f"Voici le mot à deviner {mot_a_deviner}")
+
+    #print(f"Voici le mot à deviner {mot_a_deviner}")
 
     #Initialiser la list de suivi de la progression et le décompte tentatives écoulées
     progression_pendu = ["_"]*len(mot_a_deviner)
@@ -119,7 +120,8 @@ def jouer_au_pendu():
     if choix == "1":
         jouer_au_pendu()
 
-
+#Mot de bienvenue
+print (f"Bienvenue dans ce jeu du pendu. Les consignes sont très simples. Vous disposez de {nombre_maximum_de_tentatives} tentatives pour deviner le mot. \nBonne chance!")
 
 #Fonction principale
 jouer_au_pendu()
