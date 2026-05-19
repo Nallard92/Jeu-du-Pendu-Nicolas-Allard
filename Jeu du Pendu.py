@@ -12,6 +12,9 @@ nombre_maximum_de_tentatives = 6
 
 #Fonction qui lit le fichier de mots et les stockent dans une liste
 def lire_fichier_mots (a):
+    chemin_fichier_utilisateur = input (f"Entrez le chemin d'un fichier de mots ou appuyez sur Entrée pour utiliser celui par défaut.")
+    if chemin_fichier_utilisateur != "":
+        chemin_du_fichier = chemin_fichier_utilisateur
     #Ouvrir le fichier
     contenu_fichier=open(a,"r",encoding="utf-8")
 
